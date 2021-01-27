@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Photo" customModule="PhotoMemories" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="BTx-Gx-h1H" id="hfZ-SC-lcr"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTx-Gx-h1H">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="hvN-b7-lNA"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BTx-Gx-h1H" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Eeh-fX-Cbh"/>
+                <constraint firstAttribute="trailing" secondItem="BTx-Gx-h1H" secondAttribute="trailing" id="Ieb-Lh-dka"/>
+                <constraint firstItem="BTx-Gx-h1H" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="bhe-Es-YUt"/>
+                <constraint firstAttribute="bottom" secondItem="BTx-Gx-h1H" secondAttribute="bottom" id="slJ-WX-PaM"/>
+            </constraints>
+            <point key="canvasLocation" x="-33" y="167"/>
+        </customView>
+        <collectionViewItem id="5ks-1f-Hbc" customClass="Photo" customModule="PhotoMemories" customModuleProvider="target"/>
+    </objects>
+</document>
